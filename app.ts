@@ -3,6 +3,7 @@ import express, {NextFunction, Request, Response} from "express";
 import {Webhook, WebhookUnbrandedRequiredHeaders, WebhookVerificationError} from "standardwebhooks"
 import {RenderDeploy, RenderEvent, RenderService, WebhookPayload} from "./render";
 
+import express from "express";
 const app = express();
 app.get("/api", (req, res) => {
   res.json({ message: "API working ✅" });
