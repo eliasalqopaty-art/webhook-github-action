@@ -4,10 +4,6 @@ import {Webhook, WebhookUnbrandedRequiredHeaders, WebhookVerificationError} from
 import {RenderDeploy, RenderEvent, RenderService, WebhookPayload} from "./render";
 
 const app = express();
-app.get("/", (req, res) => {
-  res.send("Pharma API is running 🚀");
-});
-
 app.get("/api", (req, res) => {
   res.json({ message: "API working ✅" });
 });
