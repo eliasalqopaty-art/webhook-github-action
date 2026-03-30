@@ -5,6 +5,13 @@ import {RenderDeploy, RenderEvent, RenderService, WebhookPayload} from "./render
 
 const app = express();
 
+import express from "express";
+app.get("/", (req, res) => {
+  res.send("Pharma API is running 🚀");
+});
+const port = process.env.PORT || 3001;app.listen(port, () => {
+  console.log("Server running");
+});
 const port = process.env.PORT || 3001;
 const renderWebhookSecret = process.env.RENDER_WEBHOOK_SECRET || '';
 
